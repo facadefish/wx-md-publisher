@@ -19,8 +19,9 @@ A local-first Markdown → WeChat Official Account typesetting and publishing to
 |---|---|---|
 | Windows | `wx-md-publisher-*-win-x64.zip` | Unzip, double-click **启动工作台.bat** |
 | macOS (Apple Silicon) | `*-darwin-arm64.tar.gz` | Unzip, double-click **start.command** |
-| macOS (Intel) | `*-darwin-x64.tar.gz` | Same as above |
 | Linux | `*-linux-x64.tar.gz` | Unzip, run `./start.sh` |
+
+> No prebuilt bundle for Intel Macs (GitHub retired Intel macOS runners). Build one yourself with `node scripts/package.mjs darwin-x64` on any machine.
 
 Download the bundle for your platform from [Releases](../../releases). The workbench opens in your browser automatically; close the console window to stop the server. The bundle **ships a Node.js runtime** — apart from a browser, there are no external dependencies.
 
@@ -93,7 +94,7 @@ The app folder lacks write permission. Move it to a normal location (e.g. Deskto
 
 | | Windows | macOS | Linux |
 |---|---|---|---|
-| Portable bundle | ✅ x64 | ✅ x64 / arm64 | ✅ x64 |
+| Portable bundle | ✅ x64 | ✅ arm64 | ✅ x64 |
 | From source | ✅ | ✅ | ✅ |
 | CI tested | ✅ | ✅ | ✅ |
 

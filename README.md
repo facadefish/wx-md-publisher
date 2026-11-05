@@ -18,9 +18,10 @@
 | 平台 | 包 | 用法 |
 |---|---|---|
 | Windows | `wx-md-publisher-*-win-x64.zip` | 解压，双击 **启动工作台.bat** |
-| macOS Apple 芯片 | `*-darwin-arm64.tar.gz` | 解压，双击 **start.command** |
-| macOS Intel | `*-darwin-x64.tar.gz` | 同上 |
+| macOS（Apple 芯片） | `*-darwin-arm64.tar.gz` | 解压，双击 **start.command** |
 | Linux | `*-linux-x64.tar.gz` | 解压，运行 `./start.sh` |
+
+> Intel Mac 不提供预构建包（GitHub 已淘汰 Intel macOS 运行器），可在任意机器上 `node scripts/package.mjs darwin-x64` 自行打包。
 
 在 [Releases](../../releases) 下载对应平台的包。启动后浏览器自动打开工作台，关闭命令行窗口即停止服务。便携包**内置 Node.js 运行时**，除浏览器外无任何外部依赖。
 
@@ -94,7 +95,7 @@ A：软件目录没有写入权限。把文件夹移到桌面等普通目录后�
 
 | | Windows | macOS | Linux |
 |---|---|---|---|
-| 便携包 | ✅ x64 | ✅ x64 / arm64 | ✅ x64 |
+| 便携包 | ✅ x64 | ✅ arm64 | ✅ x64 |
 | 源码运行 | ✅ | ✅ | ✅ |
 | CI 测试 | ✅ | ✅ | ✅ |
 

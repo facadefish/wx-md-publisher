@@ -15,8 +15,7 @@ jobs:
         include:
           - os: windows-latest
             target: win-x64
-          - os: macos-13
-            target: darwin-x64
+          # GitHub 免费运行器已淘汰 Intel mac（macos-13 无限排队），仅预构建 Apple Silicon 包
           - os: macos-latest
             target: darwin-arm64
           - os: ubuntu-latest
