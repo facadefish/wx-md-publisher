@@ -136,6 +136,29 @@ function createZip(dir, outFile, prefix) {
   fs.writeFileSync(outFile, Buffer.concat(parts));
 }
 
+// 自解析 zip 中央目录（自写自读）：windows-2022 等旧环境自带的 bsdtar 按本地代码页解码
+// UTF-8 文件名，会误报 unreadable filename——产物校验必须自洽，不依赖外部工具的字符集行为
+function listZipEntries(buf) {
+  let eocd = -1;
+  for (let i = buf.length - 22; i >= 0; i--) {
+    if (buf.readUInt32LE(i) === 0x06054b50) { eocd = i; break; }
+  }
+  if (eocd < 0) throw new Error('产物自校验失败：找不到 zip 目录结尾记录（EOCD），不是合法 zip');
+  const count = buf.readUInt16LE(eocd + 10);
+  let p = buf.readUInt32LE(eocd + 16);
+  const entries = [];
+  for (let n = 0; n < count; n++) {
+    if (buf.readUInt32LE(p) !== 0x02014b50) throw new Error(`产物自校验失败：中央目录第 ${n + 1} 条签名错误`);
+    const flags = buf.readUInt16LE(p + 8);
+    const nameLen = buf.readUInt16LE(p + 28);
+    const extraLen = buf.readUInt16LE(p + 30);
+    const commentLen = buf.readUInt16LE(p + 32);
+    entries.push({ name: buf.slice(p + 46, p + 46 + nameLen).toString('utf-8'), flags });
+    p += 46 + nameLen + extraLen + commentLen;
+  }
+  return entries;
+}
+
 // ── 0. 确保构建产物存在 ───────────────────────────────────
 if (!fs.existsSync(path.join(ROOT, 'public', 'index.html'))) {
   console.log('构建产物缺失，先执行构建...');
@@ -233,25 +256,24 @@ if (target === 'win-x64') {
 }
 console.log(`完成: ${archiveOut}（${(fs.statSync(archiveOut).size / 1024 / 1024).toFixed(1)} MB）`);
 
-// ── 6. 产物自校验：归档可列出、含启动入口、绝不含 config.json ──
-const list = spawnSync(TAR, ['-tf', archiveOut], { encoding: 'utf-8' });
-if (list.status !== 0) throw new Error(`产物自校验失败：归档无法列出（${list.stderr?.trim() || 'unknown'}）`);
-// 启动入口用 ASCII 锚点匹配，避免不同控制台代码页下中文字符串比较失真
-const entryMarker = target === 'win-x64' ? '.bat' : spec.entry;
-if (!list.stdout.includes(entryMarker) || !list.stdout.includes('server/index.js')) {
+// ── 6. 产物自校验：归档结构可读、含启动入口、绝不含 config.json ──
+let names;
+let entriesByName = null;
+if (target === 'win-x64') {
+  const entries = listZipEntries(fs.readFileSync(archiveOut));
+  names = entries.map((e) => e.name);
+  entriesByName = entries;
+} else {
+  const list = spawnSync(TAR, ['-tf', archiveOut], { encoding: 'utf-8' });
+  if (list.status !== 0) throw new Error(`产物自校验失败：归档无法列出（${list.stderr?.trim() || 'unknown'}）`);
+  names = list.stdout.split('\n');
+}
+// Node 全程 UTF-8，中文启动入口可直接精确匹配，无需 ASCII 锚点
+if (!names.some((n) => n.includes(spec.entry)) || !names.some((n) => n.includes('server/index.js'))) {
   throw new Error('产物自校验失败：归档中缺少启动入口或 server/index.js');
 }
-if (list.stdout.includes('config.json')) throw new Error('产物自校验失败：归档中包含 config.json，中止');
-// zip 额外校验：.bat 入口必须带 EFS 标志，否则非中文系统按本地代码页解码中文名必乱码
-if (target === 'win-x64') {
-  const raw = fs.readFileSync(archiveOut);
-  let efsOk = false;
-  for (let i = 0; i + 46 <= raw.length; i++) {
-    if (raw.readUInt32LE(i) !== 0x02014b50) continue; // PK\x01\x02 central file header
-    const nameLen = raw.readUInt16LE(i + 28);
-    const name = raw.slice(i + 46, i + 46 + nameLen).toString('utf-8');
-    if (name.endsWith('.bat')) { efsOk = !!(raw.readUInt16LE(i + 8) & 0x0800); break; }
-  }
-  if (!efsOk) throw new Error('产物自校验失败：zip 条目未设置 UTF-8(EFS) 标志');
-}
-console.log('归档自校验通过（格式可读、含启动入口、无 config.json、UTF-8 文件名）');
+if (names.some((n) => n.includes('config.json'))) throw new Error('产物自校验失败：归档中包含 config.json，中止');
+// zip 额外校验：非 ASCII 条目必须带 EFS 标志，否则旧系统按本地代码页解码中文名必乱码
+const noEfs = entriesByName?.find((e) => /[^\x20-\x7e]/.test(e.name) && !(e.flags & 0x0800));
+if (noEfs) throw new Error(`产物自校验失败：非 ASCII 条目未设置 UTF-8(EFS) 标志（${noEfs.name}）`);
+console.log('归档自校验通过（结构可读、含启动入口、无 config.json、UTF-8 文件名）');
