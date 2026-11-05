@@ -1,0 +1,1111 @@
+/* 来源: WeMD (github.com/tenngoxars/WeMD) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+/* 默认样式，最佳实践 */
+
+/* 全局属性 */
+.wx-article {
+  font-size: 16px;
+  color: #000000;
+  padding: 0 8px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 段落 */
+.wx-article p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* 标题 */
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #000000;
+}
+.wx-article h1 {
+  font-size: 24px;
+}
+.wx-article h2 {
+  font-size: 22px;
+}
+.wx-article h3 {
+  font-size: 20px;
+}
+.wx-article h4 {
+  font-size: 18px;
+}
+.wx-article h5 {
+  font-size: 16px;
+}
+.wx-article h6 {
+  font-size: 16px;
+}
+
+.wx-article h1 .prefix,
+.wx-article h2 .prefix,
+.wx-article h3 .prefix,
+.wx-article h4 .prefix,
+.wx-article h5 .prefix,
+.wx-article h6 .prefix {
+  display: none;
+}
+
+.wx-article h1 .suffix,
+.wx-article h2 .suffix,
+.wx-article h3 .suffix,
+.wx-article h4 .suffix,
+.wx-article h5 .suffix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+/* 列表 */
+.wx-article ul,
+.wx-article ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: #000000;
+}
+.wx-article ul {
+  list-style-type: disc;
+}
+.wx-article ul ul {
+  list-style-type: square;
+}
+
+.wx-article ol {
+  list-style-type: decimal;
+}
+
+.wx-article li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: #010101; /* 使用接近黑色的 HEX，避免微信吞掉纯黑色 */
+  font-weight: 500;
+}
+
+/* 引用 */
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1 {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-1 p {
+  margin: 0px;
+  color: #000000;
+  line-height: 26px;
+}
+
+.wx-article .multiquote-2 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 p {
+  text-align: center;
+}
+
+.wx-article .multiquote-3 h3 {
+  text-align: center;
+}
+
+.wx-article .table-of-contents a {
+  border: none;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* 链接 */
+.wx-article a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+/* 加粗 */
+.wx-article strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 斜体 */
+.wx-article em {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 加粗斜体 */
+.wx-article em strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 删除线 */
+.wx-article del {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 下划线 */
+.wx-article u {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+/* 分隔线 */
+.wx-article hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* 代码块容器 */
+.wx-article pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre.custom {
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wx-article pre code {
+  display: block;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 12px;
+  white-space: pre;
+  min-width: max-content;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre code span {
+  line-height: 26px;
+}
+
+/* 行内代码 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/* 图片 */
+.wx-article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 图片 */
+.wx-article figure {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 图片描述文字 */
+.wx-article figcaption {
+  margin-top: 5px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* 表格容器 */
+.wx-article .table-container{
+  overflow-x: auto;
+}
+
+/* 表格 */
+.wx-article table {
+  display: table;
+  text-align: left;
+}
+.wx-article tbody {
+  border: 0;
+}
+
+.wx-article table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 表格最小列宽4个汉字 */
+.wx-article table tr th:nth-of-type(n),
+.wx-article table tr td:nth-of-type(n){
+  min-width:85px;
+}
+
+.wx-article .footnote-word {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-ref {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+}
+
+.wx-article .footnote-num {
+  display: inline;
+  width: 10%; /*神奇，50px就不可以*/
+  background: none;
+  font-size: 80%;
+  opacity: 0.6;
+  line-height: 26px;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wx-article .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+  word-break:break-all;
+  width: calc(100%-50)
+}
+
+.wx-article sub, sup {
+  line-height: 0;
+}
+
+.wx-article .footnotes-sep:before {
+  content: "参考资料";
+  display: block;
+}
+
+/* 解决公式问题 */
+.wx-article .block-equation {
+  display:block;
+  text-align: center;
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .inline-equation {
+}
+
+.wx-article .inline-equation > svg {
+}
+
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+.wx-article .nice-suffix-juejin-container {
+  margin-top: 20px !important;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article figure a img {
+  margin: 0px;
+}
+
+.wx-article figure {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套 */
+.wx-article figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套，图片解释 */
+.wx-article figure a + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -35px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  line-height: 35px;
+  z-index: 20;
+}
+
+.wx-article .callout {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.wx-article .callout-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  letter-spacing: 0.05em;
+}
+
+.wx-article .callout-icon { margin-right: 8px;
+  font-size: 18px;
+}
+
+.wx-article .callout-note { border-left: 4px solid #6366f1; background: #f5f5ff; }
+.wx-article .callout-tip { border-left: 4px solid #10b981; background: #ecfdf5; }
+.wx-article .callout-important { border-left: 4px solid #8b5cf6; background: #f5f3ff; }
+.wx-article .callout-warning { border-left: 4px solid #f59e0b; background: #fffbeb; }
+.wx-article .callout-caution { border-left: 4px solid #ef4444; background: #fff5f5; }
+
+
+.wx-article .task-list-item {
+  list-style: none;
+  margin-left: -1.2em;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 4px;
+  pointer-events: none;
+}
+
+/* 默认主题 · 翡翠刊读
+ * 设计语言：深松墨承担标题层级（近黑而有绿魂），翡翠 #047857 作单一锚点强调，
+ * 每级标题使用不同版式（刊头压线 / 章节底线 / 翡翠左锚 / 字距标签）建立编辑节奏；
+ * 全程不用投影、外发光、渐变或伪元素装饰，保证复制到微信公众号后视觉稳定。
+ * 所有颜色为字面值。
+ */
+
+/* 全局 */
+.wx-article {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #242a26;
+  line-height: 1.8;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+}
+
+/* 段落 */
+.wx-article p {
+  margin: 16px 0;
+  font-size: 16px;
+  color: #242a26;
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+
+/* 一级标题 · 刊头：翡翠压顶线 + 左对齐大字墨题 */
+.wx-article h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #12241c;
+  text-align: left;
+  margin: 10px 0 28px;
+  padding-top: 18px;
+  border-top: 3px solid #047857;
+  line-height: 1.35;
+  letter-spacing: -0.3px;
+}
+
+/* 二级标题 · 章节：深松墨 + 翡翠底线，形成栏目分节 */
+.wx-article h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #134034;
+  margin: 42px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #cfe4d9;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
+
+/* 三级标题 · 翡翠左锚 */
+.wx-article h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #134034;
+  margin: 30px 0 12px;
+  padding-left: 12px;
+  border-left: 3px solid #047857;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+}
+
+/* 四级标题 · 翡翠字距标签 */
+.wx-article h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #047857;
+  margin: 26px 0 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 五级标题 */
+.wx-article h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #55605a;
+  margin: 20px 0 8px;
+  letter-spacing: 0.3px;
+}
+
+/* 六级标题:最次级墨灰,压深至对白底 ≥ AA 4.5:1 */
+.wx-article h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #606b64;
+  margin: 18px 0 8px;
+  letter-spacing: 0.5px;
+}
+
+/* 无序列表：翡翠符号 + 墨色内容 */
+.wx-article ul {
+  padding-left: 24px;
+  list-style-type: disc;
+  color: #242a26;
+}
+
+.wx-article ul li {
+  padding-left: 6px;
+  color: #047857;
+}
+
+.wx-article ul li section {
+  color: #242a26;
+}
+
+.wx-article ul ul {
+  list-style-type: circle;
+}
+
+.wx-article ul ul ul {
+  list-style-type: square;
+}
+
+/* 有序列表 */
+.wx-article ol {
+  padding-left: 24px;
+  list-style-type: decimal;
+  color: #242a26;
+}
+
+.wx-article ol li {
+  padding-left: 6px;
+  color: #047857;
+}
+
+.wx-article li section {
+  margin: 7px 0;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #242a26;
+}
+
+/* 一级引用：翡翠左锚 + 极浅翡翠底，右侧圆角 */
+.wx-article .multiquote-1 {
+  border-left: 3px solid #047857;
+  background: #f0f6f3;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #3f4a44;
+  border-radius: 0 8px 8px 0;
+  box-shadow: none;
+}
+
+.wx-article .multiquote-1 p {
+  margin: 0;
+  font-size: 15.5px;
+  color: #3f4a44;
+  line-height: 1.8;
+}
+
+/* 二级引用（覆盖 basic 的投影） */
+.wx-article .multiquote-2 {
+  border-left: 3px solid #065f46;
+  background: #f6f8f7;
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: none;
+}
+
+.wx-article .multiquote-2 p {
+  margin: 0;
+  font-size: 15px;
+  color: #55605a;
+  line-height: 1.75;
+}
+
+/* 三级引用（覆盖 basic 的投影） */
+.wx-article .multiquote-3 {
+  border-left: 2px solid #86c9ae;
+  background: #f6f8f7;
+  padding: 12px 16px;
+  margin: 14px 0;
+  border-radius: 0 8px 8px 0;
+  box-shadow: none;
+}
+
+.wx-article .multiquote-3 p {
+  margin: 0;
+  font-size: 14px;
+  color: #55605a;
+}
+
+/* 链接：翡翠 + 细下划线 */
+.wx-article a {
+  color: #047857;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(4, 120, 87, 0.4);
+  font-weight: 500;
+}
+
+/* 加粗：墨色强调，不染色 */
+.wx-article strong {
+  font-weight: 700;
+  color: #12241c;
+  letter-spacing: 0.2px;
+}
+
+/* 斜体：墨色 */
+.wx-article em {
+  font-style: italic;
+  color: #242a26;
+}
+
+/* 加粗斜体 */
+.wx-article em strong {
+  font-weight: 700;
+  font-style: italic;
+  color: #12241c;
+}
+
+/* 删除线 */
+.wx-article del {
+  text-decoration: line-through;
+  color: #606b64;
+}
+
+/* 分隔线 · 居中短翡翠条 */
+.wx-article hr {
+  border: none;
+  height: 2px;
+  width: 48px;
+  background: #047857;
+  margin: 34px auto;
+}
+
+/* 图片 */
+.wx-article img {
+  display: block;
+  margin: 24px auto;
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* 图片描述 */
+.wx-article figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #606b64;
+  margin-top: 10px;
+  letter-spacing: 0.2px;
+}
+
+/* 链接图片说明：覆盖基础主题的黑底悬浮样式 */
+.wx-article figure a + figcaption {
+  margin-top: 10px;
+  background: transparent;
+  color: #606b64;
+  line-height: 1.6;
+}
+
+/* 行内代码：浅翡翠底 + 翡翠墨字 */
+.wx-article p code, .wx-article li code, .wx-article td code, .wx-article th code {
+  background: #eef6f1;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #0f5c43;
+  font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  font-size: 0.88em;
+  margin: 0 2px;
+  border: 1px solid #d4e8de;
+}
+
+/* 代码块容器：中性发丝边 */
+.wx-article pre code,
+.wx-article pre code.hljs {
+  display: block;
+  background: #f7f9f8;
+  padding: 18px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #334155;
+  border: 1px solid #e4e9e6;
+}
+
+/* 表格 · 编辑式：去竖线，仅横向分隔，表头翡翠底线 */
+.wx-article table tr {
+  border: none;
+  background-color: transparent;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  border: none;
+  border-bottom: 1px solid #e4e9e6;
+  padding: 11px 14px;
+  font-size: 15px;
+  color: #242a26;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  border-bottom: 2px solid #047857;
+  background: transparent;
+  color: #134034;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background-color: transparent;
+}
+
+.wx-article table tr th:nth-of-type(n),
+.wx-article table tr td:nth-of-type(n){
+  min-width: 100px;
+}
+
+/* 脚注 */
+.wx-article .footnote-word {
+  color: #047857;
+  font-weight: 500;
+  border-bottom: 1px dashed rgba(4, 120, 87, 0.5);
+}
+
+.wx-article .footnote-ref {
+  color: #047857;
+  font-weight: 600;
+}
+
+.wx-article .footnotes-sep:before {
+  content: "参考资料";
+  font-weight: 700;
+  margin-top: 38px;
+  margin-bottom: 16px;
+  display: block;
+  font-size: 18px;
+  color: #12241c;
+  letter-spacing: 0.5px;
+}
+
+.wx-article .footnote-num {
+  display: inline-block;
+  width: 24px;
+  text-align: right;
+  margin-right: 8px;
+  color: #606b64;
+  font-weight: 500;
+}
+
+.wx-article .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  color: #55605a;
+  line-height: 1.8;
+}
+
+.wx-article .footnote-item p em {
+  font-style: normal;
+  color: #606b64;
+  margin-left: 6px;
+}
+
+/* 行间公式 */
+.wx-article .block-equation > svg {
+  display: block;
+  margin: 20px auto;
+  max-width: 300% !important;
+}
+
+/* 行内公式 */
+.wx-article .inline-equation > svg {
+  vertical-align: middle;
+}
+
+/* Callout 提示块：扁平化，去投影渐变；语义色左边线由 basic 提供 */
+.wx-article .callout {
+  margin: 26px 0;
+  padding: 18px 20px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.wx-article .callout-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #12241c;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.wx-article .callout-icon {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+/* 提示类 callout 与主题强调色对齐，其余保持语义色 */
+.wx-article .callout-tip {
+  border-left-color: #047857;
+  background: #ecf6f1;
+}
+
+/* 高亮文本：柔和扁平 */
+.wx-article mark {
+  background: #f6eec6;
+  color: #1a1a1a;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+/* 上标 */
+.wx-article sup {
+  font-size: 0.75em;
+  vertical-align: super;
+  color: #047857;
+}
+
+/* 下标 */
+.wx-article sub {
+  font-size: 0.75em;
+  vertical-align: sub;
+  color: #047857;
+}
+
+/* Imageflow */
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+/* 代码块样式 - 需要添加 .wx-article 前缀以匹配包装后的 HTML */
+.wx-article .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.wx-article .hljs-comment,
+.wx-article .hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.wx-article .hljs-keyword,
+.wx-article .hljs-selector-tag,
+.wx-article .hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.wx-article .hljs-number,
+.wx-article .hljs-literal,
+.wx-article .hljs-variable,
+.wx-article .hljs-template-variable,
+.wx-article .hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.wx-article .hljs-string,
+.wx-article .hljs-doctag {
+  color: #d14;
+}
+
+.wx-article .hljs-title,
+.wx-article .hljs-section,
+.wx-article .hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.wx-article .hljs-subst {
+  font-weight: normal;
+}
+
+.wx-article .hljs-type,
+.wx-article .hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.wx-article .hljs-tag,
+.wx-article .hljs-name,
+.wx-article .hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.wx-article .hljs-regexp,
+.wx-article .hljs-link {
+  color: #009926;
+}
+
+.wx-article .hljs-symbol,
+.wx-article .hljs-bullet {
+  color: #990073;
+}
+
+.wx-article .hljs-built_in,
+.wx-article .hljs-builtin-name {
+  color: #0086b3;
+}
+
+.wx-article .hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.wx-article .hljs-deletion {
+  background: #fdd;
+}
+
+.wx-article .hljs-addition {
+  background: #dfd;
+}
+
+.wx-article .hljs-emphasis {
+  font-style: italic;
+}
+
+.wx-article .hljs-strong {
+  font-weight: bold;
+}
+
+/* Imageflow CSS */
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  /* white-space: normal; */
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}

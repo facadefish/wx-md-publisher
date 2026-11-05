@@ -1,0 +1,1140 @@
+/* 来源: WeMD (github.com/tenngoxars/WeMD) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+/* 默认样式，最佳实践 */
+
+/* 全局属性 */
+.wx-article {
+  font-size: 16px;
+  color: #000000;
+  padding: 0 8px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 段落 */
+.wx-article p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* 标题 */
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #000000;
+}
+.wx-article h1 {
+  font-size: 24px;
+}
+.wx-article h2 {
+  font-size: 22px;
+}
+.wx-article h3 {
+  font-size: 20px;
+}
+.wx-article h4 {
+  font-size: 18px;
+}
+.wx-article h5 {
+  font-size: 16px;
+}
+.wx-article h6 {
+  font-size: 16px;
+}
+
+.wx-article h1 .prefix,
+.wx-article h2 .prefix,
+.wx-article h3 .prefix,
+.wx-article h4 .prefix,
+.wx-article h5 .prefix,
+.wx-article h6 .prefix {
+  display: none;
+}
+
+.wx-article h1 .suffix,
+.wx-article h2 .suffix,
+.wx-article h3 .suffix,
+.wx-article h4 .suffix,
+.wx-article h5 .suffix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+/* 列表 */
+.wx-article ul,
+.wx-article ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: #000000;
+}
+.wx-article ul {
+  list-style-type: disc;
+}
+.wx-article ul ul {
+  list-style-type: square;
+}
+
+.wx-article ol {
+  list-style-type: decimal;
+}
+
+.wx-article li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: #010101; /* 使用接近黑色的 HEX，避免微信吞掉纯黑色 */
+  font-weight: 500;
+}
+
+/* 引用 */
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1 {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-1 p {
+  margin: 0px;
+  color: #000000;
+  line-height: 26px;
+}
+
+.wx-article .multiquote-2 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 p {
+  text-align: center;
+}
+
+.wx-article .multiquote-3 h3 {
+  text-align: center;
+}
+
+.wx-article .table-of-contents a {
+  border: none;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* 链接 */
+.wx-article a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+/* 加粗 */
+.wx-article strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 斜体 */
+.wx-article em {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 加粗斜体 */
+.wx-article em strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 删除线 */
+.wx-article del {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 下划线 */
+.wx-article u {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+/* 分隔线 */
+.wx-article hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* 代码块容器 */
+.wx-article pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre.custom {
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wx-article pre code {
+  display: block;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 12px;
+  white-space: pre;
+  min-width: max-content;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre code span {
+  line-height: 26px;
+}
+
+/* 行内代码 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/* 图片 */
+.wx-article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 图片 */
+.wx-article figure {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 图片描述文字 */
+.wx-article figcaption {
+  margin-top: 5px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* 表格容器 */
+.wx-article .table-container{
+  overflow-x: auto;
+}
+
+/* 表格 */
+.wx-article table {
+  display: table;
+  text-align: left;
+}
+.wx-article tbody {
+  border: 0;
+}
+
+.wx-article table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 表格最小列宽4个汉字 */
+.wx-article table tr th:nth-of-type(n),
+.wx-article table tr td:nth-of-type(n){
+  min-width:85px;
+}
+
+.wx-article .footnote-word {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-ref {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+}
+
+.wx-article .footnote-num {
+  display: inline;
+  width: 10%; /*神奇，50px就不可以*/
+  background: none;
+  font-size: 80%;
+  opacity: 0.6;
+  line-height: 26px;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wx-article .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+  word-break:break-all;
+  width: calc(100%-50)
+}
+
+.wx-article sub, sup {
+  line-height: 0;
+}
+
+.wx-article .footnotes-sep:before {
+  content: "参考资料";
+  display: block;
+}
+
+/* 解决公式问题 */
+.wx-article .block-equation {
+  display:block;
+  text-align: center;
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .inline-equation {
+}
+
+.wx-article .inline-equation > svg {
+}
+
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+.wx-article .nice-suffix-juejin-container {
+  margin-top: 20px !important;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article figure a img {
+  margin: 0px;
+}
+
+.wx-article figure {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套 */
+.wx-article figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套，图片解释 */
+.wx-article figure a + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -35px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  line-height: 35px;
+  z-index: 20;
+}
+
+.wx-article .callout {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.wx-article .callout-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  letter-spacing: 0.05em;
+}
+
+.wx-article .callout-icon { margin-right: 8px;
+  font-size: 18px;
+}
+
+.wx-article .callout-note { border-left: 4px solid #6366f1; background: #f5f5ff; }
+.wx-article .callout-tip { border-left: 4px solid #10b981; background: #ecfdf5; }
+.wx-article .callout-important { border-left: 4px solid #8b5cf6; background: #f5f3ff; }
+.wx-article .callout-warning { border-left: 4px solid #f59e0b; background: #fffbeb; }
+.wx-article .callout-caution { border-left: 4px solid #ef4444; background: #fff5f5; }
+
+
+.wx-article .task-list-item {
+  list-style: none;
+  margin-left: -1.2em;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 4px;
+  pointer-events: none;
+}
+
+/* 极光玻璃风格 */
+.wx-article {
+  padding: 5px 20px;
+  max-width: 677px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: #333;
+  /* 背景透明，兼容微信深色模式 */
+  background-color: transparent;
+  word-break: break-word;
+}
+
+/* 段落 - 增加呼吸感 */
+.wx-article p {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  line-height: 1.9;
+  letter-spacing: 0.6px;
+  text-align: justify;
+  color: #444;
+  font-size: 16px;
+}
+
+/* 一级标题 - 极光色标题 */
+.wx-article h1 {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.wx-article h1 .content {
+  font-size: 26px;
+  font-weight: 800;
+  display: inline-block;
+  color: #4158D0;
+  line-height: 1.4;
+  padding-bottom: 10px;
+  /* 底部加一条极细的渐变线 */
+  border-bottom: 2px solid #eee;
+  border-image: linear-gradient(135deg, #4158D0 0%, #C850C0 100%) 1;
+}
+
+.wx-article h1 .prefix,
+.wx-article h1 .suffix {
+  display: none;
+}
+
+/* 二级标题 - 悬浮色块 */
+.wx-article h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.wx-article h2 .content {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  /* 白字 */
+  background-color: #4158D0;
+  padding: 8px 18px;
+  border-radius: 20px 20px 20px 4px;
+  /* 不对称圆角，更灵动 */
+  box-shadow: 0 8px 16px rgba(200, 80, 192, 0.3);
+  /* 彩色弥散投影 */
+  line-height: 1.2;
+}
+
+.wx-article h2 .prefix,
+.wx-article h2 .suffix {
+  display: none;
+}
+
+/* 三级标题 - 半高下划线 */
+.wx-article h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.wx-article h3 .content {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0 -0.4em rgba(65, 88, 208, 0.2);
+  padding: 0 4px;
+}
+
+.wx-article h3 .prefix,
+.wx-article h3 .suffix {
+  display: none;
+}
+
+/* 
+ * 四级标题 - 极简圆点
+ */
+.wx-article h4 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.wx-article h4 .content {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #4158D0;
+  background-color: #f0f2ff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  line-height: 1.4;
+}
+
+.wx-article h4 .prefix,
+.wx-article h4 .suffix {
+  display: none;
+}
+
+/* 
+ * 列表 - 炫彩圆点
+ */
+.wx-article ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #C850C0;
+  /* 列表符号粉紫色 */
+}
+
+.wx-article ul li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.wx-article li section {
+  color: #444;
+  /* 正文深灰 */
+  font-size: 16px;
+}
+
+/* 有序列表 - 渐变色数字 (通过颜色模拟) */
+.wx-article ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+  margin: 20px 0;
+  color: #4158D0;
+  /* 数字深蓝 */
+  font-weight: bold;
+}
+
+.wx-article ul ul {
+  list-style-type: circle;
+  color: #4158D0;
+  margin-top: 8px;
+}
+
+.wx-article ol ol {
+  list-style-type: lower-roman;
+  color: #C850C0;
+}
+
+.wx-article ol li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.wx-article ol li section {
+  color: #444;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* 
+ * 引用 - 磨砂玻璃卡片
+ * 白底 + 柔和彩色投影 + 细微边框
+ */
+.wx-article .multiquote-1,
+.wx-article .multiquote-2,
+.wx-article .multiquote-3 {
+  margin: 36px 0;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  /* 关键：双重投影，一层白光，一层彩光 */
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.8), 4px 4px 20px rgba(65, 88, 208, 0.1);
+  border-radius: 16px;
+  /* 顶部渐变装饰条 */
+  border-top: 4px solid #C850C0;
+  overflow: visible !important;
+}
+
+.wx-article .multiquote-1 p,
+.wx-article .multiquote-2 p,
+.wx-article .multiquote-3 p {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* 链接 - 渐变虚线 */
+.wx-article a {
+  color: #C850C0;
+  text-decoration: none;
+  border-bottom: 1px dashed #C850C0;
+  font-weight: 600;
+  padding-bottom: 1px;
+}
+
+/* 加粗 */
+.wx-article strong {
+  font-weight: 700;
+  color: #4158D0;
+  margin: 0 1px;
+}
+
+/* 斜体 */
+.wx-article em {
+  color: #C850C0;
+  font-style: italic;
+}
+
+.wx-article em strong {
+  color: #C850C0;
+}
+
+/* 高亮 */
+.wx-article mark {
+    background: rgba(65, 88, 208, 0.15);
+    color: #4158D0;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* 删除线 - 渐变色 */
+.wx-article del {
+    text-decoration: line-through;
+    color: #999;
+    text-decoration-color: #C850C0;
+}
+
+/* 分隔线 - 渐变光束 */
+.wx-article hr {
+  margin: 60px auto;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(90deg, rgba(247, 249, 252, 0) 0%, #C850C0 50%, rgba(247, 249, 252, 0) 100%);
+  width: 80%;
+}
+
+/* 图片 - 悬浮投影 */
+.wx-article img {
+  display: block;
+  margin: 40px auto;
+  width: 100%;
+  border-radius: 12px;
+  /* 柔和的彩色投影 */
+  box-shadow: 0 15px 35px rgba(65, 88, 208, 0.12);
+}
+
+/* 行内代码 - 气泡风格 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  color: #4158D0;
+  background: #f0f2ff;
+  border: 1px solid rgba(65, 88, 208, 0.1);
+  padding: 3px 6px;
+  margin: 0 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+/* 代码块 - 极简深色圆角 */
+/* 代码块 - 注意：不要设置 color，让语法高亮主题控制文字颜色 */
+.wx-article pre code.hljs {
+  display: block;
+  padding: 20px;
+  background: #282c34;
+  /* 经典的 Atom One Dark */
+  color: #abb2bf;
+  /* 默认文字颜色 */
+  font-size: 13px;
+  line-height: 1.6;
+  border-radius: 12px;
+  font-family: sans-serif;
+  overflow-x: auto;
+  white-space: pre;
+  min-width: max-content;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 优化深色背景下的语法高亮颜色 */
+.wx-article pre code.hljs .hljs-comment,
+.wx-article pre code.hljs .hljs-quote {
+  color: #5c6370;
+}
+
+.wx-article pre code.hljs .hljs-keyword,
+.wx-article pre code.hljs .hljs-selector-tag {
+  color: #c678dd;
+  font-weight: bold;
+}
+
+.wx-article pre code.hljs .hljs-string,
+.wx-article pre code.hljs .hljs-doctag {
+  color: #98c379;
+}
+
+.wx-article pre code.hljs .hljs-number,
+.wx-article pre code.hljs .hljs-literal {
+  color: #d19a66;
+}
+
+.wx-article pre code.hljs .hljs-title,
+.wx-article pre code.hljs .hljs-section {
+  color: #61afef;
+  font-weight: bold;
+}
+
+.wx-article pre code.hljs .hljs-built_in,
+.wx-article pre code.hljs .hljs-builtin-name {
+  color: #e06c75;
+}
+
+/* 如果没有语法高亮，设置默认灰色 */
+.wx-article pre code:not(.hljs) {
+  color: #abb2bf;
+  background: #282c34;
+}
+
+/* 表格 - 清新风格 */
+.wx-article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  font-size: 14px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+}
+
+.wx-article table tr th {
+  background: #f4f6f9;
+  color: #4158D0;
+  font-weight: 700;
+  border: 1px solid #f0f0f0;
+  padding: 12px 10px;
+  text-align: left;
+}
+
+.wx-article table tr td {
+  border: 1px solid #f0f0f0;
+  padding: 12px 10px;
+  color: #555;
+  background: #fff;
+}
+
+/* 脚注 */
+.wx-article .footnote-word,
+.wx-article .footnote-ref {
+  color: #4158D0;
+}
+
+.wx-article .footnotes-sep {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 60px;
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
+
+.wx-article .footnote-num {
+  font-weight: bold;
+  color: #fff;
+  background: #C850C0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  text-align: center;
+  line-height: 16px;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+.wx-article .footnote-item p {
+  color: #999;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+/* 公式 */
+.wx-article .block-equation > svg {
+  max-width: 100% !important;
+}
+
+.wx-article .inline-equation > svg {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* 提示块 - 极光玻璃风格 */
+.wx-article .callout {
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px rgba(65, 88, 208, 0.1);
+}
+
+.wx-article .callout-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #4158D0;
+  font-size: 16px;
+}
+
+.wx-article .callout-icon { margin-right: 8px;
+  margin-right: 6px;
+}
+
+.wx-article .callout-note {
+  border-left: 4px solid #6366f1;
+}
+
+.wx-article .callout-tip {
+  border-left: 4px solid #C850C0;
+}
+
+.wx-article .callout-important {
+  border-left: 4px solid #4158D0;
+}
+
+.wx-article .callout-warning {
+  border-left: 4px solid #FFCC70;
+}
+
+.wx-article .callout-caution {
+  border-left: 4px solid #ef4444;
+}
+
+/* Imageflow CSS */
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  /* white-space: normal; */
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+/*
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+*/
+
+/* 代码块样式 - 需要添加 .wx-article 前缀以匹配包装后的 HTML */
+.wx-article .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.wx-article .hljs-comment,
+.wx-article .hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.wx-article .hljs-keyword,
+.wx-article .hljs-selector-tag,
+.wx-article .hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.wx-article .hljs-number,
+.wx-article .hljs-literal,
+.wx-article .hljs-variable,
+.wx-article .hljs-template-variable,
+.wx-article .hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.wx-article .hljs-string,
+.wx-article .hljs-doctag {
+  color: #d14;
+}
+
+.wx-article .hljs-title,
+.wx-article .hljs-section,
+.wx-article .hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.wx-article .hljs-subst {
+  font-weight: normal;
+}
+
+.wx-article .hljs-type,
+.wx-article .hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.wx-article .hljs-tag,
+.wx-article .hljs-name,
+.wx-article .hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.wx-article .hljs-regexp,
+.wx-article .hljs-link {
+  color: #009926;
+}
+
+.wx-article .hljs-symbol,
+.wx-article .hljs-bullet {
+  color: #990073;
+}
+
+.wx-article .hljs-built_in,
+.wx-article .hljs-builtin-name {
+  color: #0086b3;
+}
+
+.wx-article .hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.wx-article .hljs-deletion {
+  background: #fdd;
+}
+
+.wx-article .hljs-addition {
+  background: #dfd;
+}
+
+.wx-article .hljs-emphasis {
+  font-style: italic;
+}
+
+.wx-article .hljs-strong {
+  font-weight: bold;
+}
+
+/* Imageflow CSS */
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  /* white-space: normal; */
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}

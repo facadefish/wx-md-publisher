@@ -1,0 +1,1167 @@
+/* 来源: WeMD (github.com/tenngoxars/WeMD) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+/* 默认样式，最佳实践 */
+
+/* 全局属性 */
+.wx-article {
+  font-size: 16px;
+  color: #000000;
+  padding: 0 8px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 段落 */
+.wx-article p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* 标题 */
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #000000;
+}
+.wx-article h1 {
+  font-size: 24px;
+}
+.wx-article h2 {
+  font-size: 22px;
+}
+.wx-article h3 {
+  font-size: 20px;
+}
+.wx-article h4 {
+  font-size: 18px;
+}
+.wx-article h5 {
+  font-size: 16px;
+}
+.wx-article h6 {
+  font-size: 16px;
+}
+
+.wx-article h1 .prefix,
+.wx-article h2 .prefix,
+.wx-article h3 .prefix,
+.wx-article h4 .prefix,
+.wx-article h5 .prefix,
+.wx-article h6 .prefix {
+  display: none;
+}
+
+.wx-article h1 .suffix,
+.wx-article h2 .suffix,
+.wx-article h3 .suffix,
+.wx-article h4 .suffix,
+.wx-article h5 .suffix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+/* 列表 */
+.wx-article ul,
+.wx-article ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: #000000;
+}
+.wx-article ul {
+  list-style-type: disc;
+}
+.wx-article ul ul {
+  list-style-type: square;
+}
+
+.wx-article ol {
+  list-style-type: decimal;
+}
+
+.wx-article li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: #010101; /* 使用接近黑色的 HEX，避免微信吞掉纯黑色 */
+  font-weight: 500;
+}
+
+/* 引用 */
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1 {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-1 p {
+  margin: 0px;
+  color: #000000;
+  line-height: 26px;
+}
+
+.wx-article .multiquote-2 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 p {
+  text-align: center;
+}
+
+.wx-article .multiquote-3 h3 {
+  text-align: center;
+}
+
+.wx-article .table-of-contents a {
+  border: none;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* 链接 */
+.wx-article a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+/* 加粗 */
+.wx-article strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 斜体 */
+.wx-article em {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 加粗斜体 */
+.wx-article em strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 删除线 */
+.wx-article del {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 下划线 */
+.wx-article u {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+/* 分隔线 */
+.wx-article hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* 代码块容器 */
+.wx-article pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre.custom {
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wx-article pre code {
+  display: block;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 12px;
+  white-space: pre;
+  min-width: max-content;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre code span {
+  line-height: 26px;
+}
+
+/* 行内代码 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/* 图片 */
+.wx-article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 图片 */
+.wx-article figure {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 图片描述文字 */
+.wx-article figcaption {
+  margin-top: 5px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* 表格容器 */
+.wx-article .table-container{
+  overflow-x: auto;
+}
+
+/* 表格 */
+.wx-article table {
+  display: table;
+  text-align: left;
+}
+.wx-article tbody {
+  border: 0;
+}
+
+.wx-article table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 表格最小列宽4个汉字 */
+.wx-article table tr th:nth-of-type(n),
+.wx-article table tr td:nth-of-type(n){
+  min-width:85px;
+}
+
+.wx-article .footnote-word {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-ref {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+}
+
+.wx-article .footnote-num {
+  display: inline;
+  width: 10%; /*神奇，50px就不可以*/
+  background: none;
+  font-size: 80%;
+  opacity: 0.6;
+  line-height: 26px;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wx-article .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+  word-break:break-all;
+  width: calc(100%-50)
+}
+
+.wx-article sub, sup {
+  line-height: 0;
+}
+
+.wx-article .footnotes-sep:before {
+  content: "参考资料";
+  display: block;
+}
+
+/* 解决公式问题 */
+.wx-article .block-equation {
+  display:block;
+  text-align: center;
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .inline-equation {
+}
+
+.wx-article .inline-equation > svg {
+}
+
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+.wx-article .nice-suffix-juejin-container {
+  margin-top: 20px !important;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article figure a img {
+  margin: 0px;
+}
+
+.wx-article figure {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套 */
+.wx-article figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套，图片解释 */
+.wx-article figure a + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -35px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  line-height: 35px;
+  z-index: 20;
+}
+
+.wx-article .callout {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.wx-article .callout-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  letter-spacing: 0.05em;
+}
+
+.wx-article .callout-icon { margin-right: 8px;
+  font-size: 18px;
+}
+
+.wx-article .callout-note { border-left: 4px solid #6366f1; background: #f5f5ff; }
+.wx-article .callout-tip { border-left: 4px solid #10b981; background: #ecfdf5; }
+.wx-article .callout-important { border-left: 4px solid #8b5cf6; background: #f5f3ff; }
+.wx-article .callout-warning { border-left: 4px solid #f59e0b; background: #fffbeb; }
+.wx-article .callout-caution { border-left: 4px solid #ef4444; background: #fff5f5; }
+
+
+.wx-article .task-list-item {
+  list-style: none;
+  margin-left: -1.2em;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 4px;
+  pointer-events: none;
+}
+
+/* 编辑部手记：高信息密度的中文内刊风格 */
+.wx-article {
+  max-width: 677px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  color: #34362f;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.018em;
+  word-break: break-word;
+  counter-reset: editorial-section;
+}
+
+/* 正文 */
+.wx-article p {
+  margin: 0 0 23px;
+  color: #34362f;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.018em;
+  text-align: justify;
+}
+
+/* 刊头和章节 */
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  padding: 0;
+  text-align: left;
+}
+
+.wx-article h1 {
+  margin: 26px 0 50px;
+  padding: 24px 0 20px;
+  border-top: 5px solid #20221e;
+  border-bottom: 3px solid #c76237;
+  background: transparent;
+}
+
+.wx-article h1 .content {
+  color: #20221e;
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", SimSun, serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+}
+
+.wx-article h2 {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  margin: 56px 0 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #afb1a6;
+}
+
+.wx-article h2::before {
+  content: counter(editorial-section, decimal-leading-zero);
+  counter-increment: editorial-section;
+  display: inline-block;
+  min-width: 42px;
+  margin-right: 4px;
+  color: #c76237;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  vertical-align: bottom;
+}
+
+.wx-article h2 .content {
+  color: #242720;
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", SimSun, serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.48;
+  letter-spacing: 0.035em;
+}
+
+.wx-article h3 {
+  margin: 38px 0 19px;
+}
+
+.wx-article h3 .content {
+  display: inline-block;
+  padding: 7px 13px;
+  color: #f4f2e9;
+  background: #34372f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: 0.055em;
+}
+
+.wx-article h4 {
+  margin: 31px 0 16px;
+  padding-left: 12px;
+  border-left: 4px solid #c76237;
+}
+
+.wx-article h4 .content {
+  color: #34372f;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.035em;
+}
+
+.wx-article h5,
+.wx-article h6 {
+  margin: 27px 0 14px;
+}
+
+.wx-article h5 .content,
+.wx-article h6 .content {
+  color: #626657;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.wx-article h1 .prefix,
+.wx-article h1 .suffix,
+.wx-article h2 .prefix,
+.wx-article h2 .suffix,
+.wx-article h3 .prefix,
+.wx-article h3 .suffix,
+.wx-article h4 .prefix,
+.wx-article h4 .suffix,
+.wx-article h5 .prefix,
+.wx-article h5 .suffix,
+.wx-article h6 .prefix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+/* 摘要引用 */
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1 {
+  margin: 35px 0;
+  padding: 24px 24px 21px;
+  border-top: 3px solid #5f6453;
+  border-bottom: 1px solid #c8c9bf;
+  background: #f1f0e9;
+}
+
+.wx-article .multiquote-2,
+.wx-article .multiquote-3 {
+  margin: 28px 0 28px 18px;
+  padding: 7px 0 7px 18px;
+  border-left: 3px solid #c76237;
+  background: transparent;
+}
+
+.wx-article .multiquote-1 p,
+.wx-article .multiquote-2 p,
+.wx-article .multiquote-3 p {
+  margin: 0;
+  color: #4f5347;
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", SimSun, serif;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.035em;
+}
+
+/* 清单和步骤 */
+.wx-article ul,
+.wx-article ol {
+  margin: 22px 0 28px;
+  padding-left: 24px;
+  color: #c76237;
+}
+
+.wx-article ul {
+  list-style-type: square;
+}
+
+.wx-article ul ul {
+  margin-top: 8px;
+  list-style-type: circle;
+}
+
+.wx-article ol {
+  list-style-type: decimal-leading-zero;
+}
+
+.wx-article ol ol {
+  margin-top: 8px;
+  list-style-type: lower-alpha;
+}
+
+.wx-article li section {
+  margin: 7px 0;
+  color: #34362f;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.wx-article ol > li {
+  margin: 11px 0;
+  color: #c76237;
+  font-weight: 700;
+}
+
+.wx-article ol > li > section {
+  padding: 10px 14px;
+  border-left: 1px solid #b8baae;
+  color: #34362f;
+  background: #f5f4ee;
+  font-weight: 400;
+}
+
+/* 行内强调 */
+.wx-article a {
+  color: #9f4828;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #d59a7f;
+}
+
+.wx-article strong {
+  color: #242720;
+  font-weight: 700;
+  border-bottom: 2px solid #dfa187;
+}
+
+.wx-article em {
+  color: #646858;
+  font-style: italic;
+}
+
+.wx-article em strong {
+  color: #242720;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.wx-article mark {
+  padding: 1px 4px;
+  color: #392e27;
+  background: #f1d8c9;
+}
+
+.wx-article del {
+  color: #8b8d84;
+  text-decoration: line-through;
+}
+
+.wx-article u {
+  text-decoration-color: #c76237;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+.wx-article hr {
+  width: 84px;
+  height: 5px;
+  margin: 54px auto;
+  border: none;
+  background: #c76237;
+}
+
+/* 图片版式 */
+.wx-article figure {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 40px 4px 44px 0;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article img,
+.wx-article figure a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 7px;
+  border: 1px solid #ccccc2;
+  border-radius: 1px;
+  background: #f7f6f0;
+  box-shadow: 8px 8px 0 #deddd4;
+}
+
+.wx-article figcaption {
+  margin-top: 16px;
+  padding-left: 13px;
+  border-left: 3px solid #c76237;
+  color: #73766b;
+  font-size: 12px;
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+/* 行内代码 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  margin: 0 2px;
+  padding: 2px 6px;
+  border: 1px solid #d2d1c7;
+  border-radius: 2px;
+  color: #9f4828;
+  background: #f1f0e9;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13px;
+  word-break: break-all;
+}
+
+/* 代码块 */
+.wx-article pre {
+  margin: 32px 0;
+  border-top: 5px solid #c76237;
+  border-radius: 1px;
+  background: #23251f;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre.custom {
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wx-article pre code,
+.wx-article pre code.hljs {
+  display: block;
+  min-width: max-content;
+  padding: 20px 21px;
+  border-radius: 0;
+  color: #e8e6dd;
+  background: #23251f;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 13px;
+  line-height: 1.72;
+  white-space: pre;
+}
+
+.wx-article pre.custom > .mac-sign {
+  display: block;
+  border-bottom: 1px solid #3d4037;
+  background: #23251f;
+}
+
+.wx-article pre code.hljs .hljs-comment,
+.wx-article pre code.hljs .hljs-quote {
+  color: #999c90;
+}
+
+.wx-article pre code.hljs .hljs-keyword,
+.wx-article pre code.hljs .hljs-selector-tag,
+.wx-article pre code.hljs .hljs-meta {
+  color: #f09a6d;
+}
+
+.wx-article pre code.hljs .hljs-string,
+.wx-article pre code.hljs .hljs-doctag,
+.wx-article pre code.hljs .hljs-regexp {
+  color: #afc89f;
+}
+
+.wx-article pre code.hljs .hljs-number,
+.wx-article pre code.hljs .hljs-literal,
+.wx-article pre code.hljs .hljs-symbol {
+  color: #dfbe76;
+}
+
+.wx-article pre code.hljs .hljs-title,
+.wx-article pre code.hljs .hljs-section,
+.wx-article pre code.hljs .hljs-type {
+  color: #91bec8;
+}
+
+/* 数据表 */
+.wx-article .table-container {
+  margin: 34px 0;
+  border-top: 5px solid #c76237;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #34362f;
+  background: #f7f6f0;
+  text-align: left;
+}
+
+.wx-article table tr {
+  border: none;
+  background: transparent;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  min-width: 88px;
+  padding: 12px 11px;
+  border: none;
+  border-bottom: 1px solid #d3d3c8;
+  color: #41443a;
+  background: transparent;
+  font-size: 14px;
+  line-height: 1.62;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  color: #f2f0e7;
+  background: #34372f;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background: #ecebe3;
+}
+
+/* 编辑部提示 */
+.wx-article .callout {
+  margin: 32px 0;
+  padding: 19px 21px;
+  border: 1px solid #cecec3;
+  border-left: 5px solid #626754;
+  border-radius: 1px;
+  color: #41443a;
+  background: #f1f0e9;
+  box-shadow: none;
+}
+
+.wx-article .callout-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+  color: #34372f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+}
+
+.wx-article .callout-icon {
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.wx-article .callout p {
+  margin: 0;
+  color: #505348;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.wx-article .callout-warning,
+.wx-article .callout-caution {
+  border-left-color: #c76237;
+  background: #f5ebe4;
+}
+
+/* 参考资料 */
+.wx-article .footnote-word,
+.wx-article .footnote-ref {
+  color: #9f4828;
+  font-weight: 600;
+}
+
+.wx-article .footnotes-sep {
+  margin-top: 52px;
+  padding-top: 20px;
+  border-top: 5px solid #34372f;
+}
+
+.wx-article .footnotes-sep:before {
+  display: block;
+  content: "参考资料";
+  color: #34372f;
+  font-family: "Songti SC", "STSong", "Noto Serif CJK SC", SimSun, serif;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.wx-article .footnote-num {
+  width: 31px;
+  flex-shrink: 0;
+  color: #c76237;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.wx-article .footnote-item p {
+  width: auto;
+  margin: 0;
+  color: #74776d;
+  font-size: 13px;
+  line-height: 1.75;
+  text-align: left;
+}
+
+/* 公式、图表和任务列表 */
+.wx-article .block-equation {
+  display: block;
+  margin: 34px 0;
+  padding: 20px 10px;
+  border-top: 1px solid #cecec3;
+  border-bottom: 1px solid #cecec3;
+  text-align: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+}
+
+.wx-article .inline-equation {
+  display: inline;
+}
+
+.wx-article .inline-equation > svg {
+  vertical-align: middle;
+}
+
+.wx-article pre.mermaid {
+  padding: 22px 12px;
+  border: 1px solid #cecec3;
+  border-top: 5px solid #626754;
+  background: #f7f6f0;
+}
+
+.wx-article .task-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-left: -1.2em;
+  list-style: none;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 7px;
+  margin-right: 8px;
+  pointer-events: none;
+}
+
+/* GitHub Dark 代码高亮 */
+.wx-article .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+  color: #c9d1d9;
+  background: #0d1117;
+}
+
+.wx-article .hljs-doctag,
+.wx-article .hljs-keyword,
+.wx-article .hljs-meta .hljs-keyword,
+.wx-article .hljs-template-tag,
+.wx-article .hljs-template-variable,
+.wx-article .hljs-type,
+.wx-article .hljs-variable.language_ {
+  color: #ff7b72;
+}
+
+.wx-article .hljs-title,
+.wx-article .hljs-title.class_,
+.wx-article .hljs-title.class_.inherited__,
+.wx-article .hljs-title.function_ {
+  color: #d2a8ff;
+}
+
+.wx-article .hljs-attr,
+.wx-article .hljs-attribute,
+.wx-article .hljs-literal,
+.wx-article .hljs-meta,
+.wx-article .hljs-number,
+.wx-article .hljs-operator,
+.wx-article .hljs-variable,
+.wx-article .hljs-selector-attr,
+.wx-article .hljs-selector-class,
+.wx-article .hljs-selector-id {
+  color: #79c0ff;
+}
+
+.wx-article .hljs-regexp,
+.wx-article .hljs-string,
+.wx-article .hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+
+.wx-article .hljs-built_in,
+.wx-article .hljs-symbol {
+  color: #ffa657;
+}
+
+.wx-article .hljs-comment,
+.wx-article .hljs-code,
+.wx-article .hljs-formula {
+  color: #9198a1;
+}
+
+.wx-article .hljs-name,
+.wx-article .hljs-quote,
+.wx-article .hljs-selector-tag,
+.wx-article .hljs-selector-pseudo {
+  color: #7ee787;
+}
+
+.wx-article .hljs-subst,
+.wx-article .hljs-emphasis,
+.wx-article .hljs-strong {
+  color: #c9d1d9;
+}
+
+.wx-article .hljs-section {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+.wx-article .hljs-bullet {
+  color: #f2cc60;
+}
+
+.wx-article .hljs-emphasis {
+  font-style: italic;
+}
+
+.wx-article .hljs-strong {
+  font-weight: bold;
+}
+
+.wx-article .hljs-addition {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+
+.wx-article .hljs-deletion {
+  color: #ffdcd7;
+  background-color: #67060c;
+}

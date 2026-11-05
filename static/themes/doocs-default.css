@@ -1,0 +1,327 @@
+/* 来源: doocs/md (github.com/doocs/md) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+.wx-article{--md-primary-color:#0F4C81;--md-font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;--md-font-size:16px;--md-line-height:1.75;--md-block-spacing:1;--md-link-color:#576b95;--foreground:0 0% 3.9%;--blockquote-background:#f7f7f7;}
+.wx-article,.wx-article .container{
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  text-align: left;
+}.wx-article{
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  text-align: left;
+}.wx-article section > :first-child{
+  margin-top: 0 !important;
+}.wx-article blockquote,.wx-article blockquote{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}.wx-article table,.wx-article table{
+  border-collapse: collapse;
+  min-width: 100%;
+}.wx-article .mermaid-diagram .nodeLabel p{
+  color: unset !important;
+  letter-spacing: unset !important;
+}.wx-article img.md-emoji,.wx-article img.md-emoji{
+  max-height: 1.4em;
+  width: auto;
+  vertical-align: text-bottom;
+  margin: 0 0.1em;
+  display: inline;
+}.wx-article img.md-asset-img,.wx-article img.md-asset-img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: text-bottom;
+  display: inline;
+}
+
+.wx-article h1{
+  display: table;
+  padding: 0 1em;
+  border-bottom: 2px solid var(--md-primary-color);
+  margin: calc(2em * var(--md-block-spacing)) auto calc(1em * var(--md-block-spacing));
+  color: hsl(var(--foreground));
+  font-size: calc(var(--md-font-size) * 1.2);
+  font-weight: bold;
+  text-align: center;
+}.wx-article h2{
+  display: table;
+  padding: 0 0.2em;
+  margin: calc(4em * var(--md-block-spacing)) auto calc(2em * var(--md-block-spacing));
+  color: #fff;
+  background: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1.2);
+  font-weight: bold;
+  text-align: center;
+}.wx-article h3{
+  padding-left: 8px;
+  border-left: 3px solid var(--md-primary-color);
+  margin: calc(2em * var(--md-block-spacing)) 8px calc(0.75em * var(--md-block-spacing)) 0;
+  color: hsl(var(--foreground));
+  font-size: calc(var(--md-font-size) * 1.1);
+  font-weight: bold;
+  line-height: 1.2;
+}.wx-article h4{
+  margin: calc(2em * var(--md-block-spacing)) 8px calc(0.5em * var(--md-block-spacing));
+  color: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1);
+  font-weight: bold;
+}.wx-article h5{
+  margin: calc(1.5em * var(--md-block-spacing)) 8px calc(0.5em * var(--md-block-spacing));
+  color: var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1);
+  font-weight: bold;
+}.wx-article h6{
+  margin: calc(1.5em * var(--md-block-spacing)) 8px calc(0.5em * var(--md-block-spacing));
+  font-size: calc(var(--md-font-size) * 1);
+  color: var(--md-primary-color);
+}.wx-article p{
+  margin: calc(1.5em * var(--md-block-spacing)) 8px;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground));
+}.wx-article blockquote{
+  font-style: normal;
+  padding: 1em;
+  border-left: 4px solid var(--md-primary-color);
+  border-radius: 6px;
+  color: hsl(var(--foreground));
+  background: var(--md-blockquote-background, var(--blockquote-background));
+  margin-bottom: calc(1em * var(--md-block-spacing));
+}.wx-article blockquote > p{
+  display: block;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: hsl(var(--foreground));
+  margin: 0;
+}.wx-article .alert-title-note,.wx-article .alert-title-tip,.wx-article .alert-title-info,.wx-article .alert-title-important,.wx-article .alert-title-warning,.wx-article .alert-title-caution,.wx-article .alert-title-abstract,.wx-article .alert-title-summary,.wx-article .alert-title-tldr,.wx-article .alert-title-todo,.wx-article .alert-title-success,.wx-article .alert-title-done,.wx-article .alert-title-question,.wx-article .alert-title-help,.wx-article .alert-title-faq,.wx-article .alert-title-failure,.wx-article .alert-title-fail,.wx-article .alert-title-missing,.wx-article .alert-title-danger,.wx-article .alert-title-error,.wx-article .alert-title-bug,.wx-article .alert-title-example,.wx-article .alert-title-quote,.wx-article .alert-title-cite,.wx-article .alert-title-theorem,.wx-article .alert-title-lemma,.wx-article .alert-title-corollary,.wx-article .alert-title-proposition,.wx-article .alert-title-definition,.wx-article .alert-title-axiom,.wx-article .alert-title-postulate,.wx-article .alert-title-assumption,.wx-article .alert-title-proof,.wx-article .alert-title-remark,.wx-article .alert-title-custom{
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.5em;
+}.wx-article .alert-title-note{
+  color: #478be6;
+}.wx-article .alert-title-tip{
+  color: #57ab5a;
+}.wx-article .alert-title-info{
+  color: #93c5fd;
+}.wx-article .alert-title-important{
+  color: #986ee2;
+}.wx-article .alert-title-warning{
+  color: #c69026;
+}.wx-article .alert-title-caution{
+  color: #e5534b;
+}.wx-article .alert-title-abstract,.wx-article .alert-title-summary,.wx-article .alert-title-tldr{
+  color: #00bfff;
+}.wx-article .alert-title-todo{
+  color: #478be6;
+}.wx-article .alert-title-success,.wx-article .alert-title-done{
+  color: #57ab5a;
+}.wx-article .alert-title-question,.wx-article .alert-title-help,.wx-article .alert-title-faq{
+  color: #c69026;
+}.wx-article .alert-title-failure,.wx-article .alert-title-fail,.wx-article .alert-title-missing{
+  color: #e5534b;
+}.wx-article .alert-title-danger,.wx-article .alert-title-error{
+  color: #e5534b;
+}.wx-article .alert-title-bug{
+  color: #e5534b;
+}.wx-article .alert-title-example{
+  color: #986ee2;
+}.wx-article .alert-title-quote,.wx-article .alert-title-cite{
+  color: #9ca3af;
+}.wx-article .alert-icon-note{
+  fill: #478be6;
+}.wx-article .alert-icon-tip{
+  fill: #57ab5a;
+}.wx-article .alert-icon-info{
+  fill: #93c5fd;
+}.wx-article .alert-icon-important{
+  fill: #986ee2;
+}.wx-article .alert-icon-warning{
+  fill: #c69026;
+}.wx-article .alert-icon-caution{
+  fill: #e5534b;
+}.wx-article .alert-icon-abstract,.wx-article .alert-icon-summary,.wx-article .alert-icon-tldr{
+  fill: #00bfff;
+}.wx-article .alert-icon-todo{
+  fill: #478be6;
+}.wx-article .alert-icon-success,.wx-article .alert-icon-done{
+  fill: #57ab5a;
+}.wx-article .alert-icon-question,.wx-article .alert-icon-help,.wx-article .alert-icon-faq{
+  fill: #c69026;
+}.wx-article .alert-icon-failure,.wx-article .alert-icon-fail,.wx-article .alert-icon-missing{
+  fill: #e5534b;
+}.wx-article .alert-icon-danger,.wx-article .alert-icon-error{
+  fill: #e5534b;
+}.wx-article .alert-icon-bug{
+  fill: #e5534b;
+}.wx-article .alert-icon-example{
+  fill: #986ee2;
+}.wx-article .alert-icon-quote,.wx-article .alert-icon-cite{
+  fill: #9ca3af;
+}.wx-article .alert-title-theorem,.wx-article .alert-title-lemma,.wx-article .alert-title-corollary,.wx-article .alert-title-proposition{
+  color: #986ee2;
+}.wx-article .alert-title-definition{
+  color: #57ab5a;
+}.wx-article .alert-title-axiom,.wx-article .alert-title-postulate,.wx-article .alert-title-assumption{
+  color: #478be6;
+}.wx-article .alert-title-proof{
+  color: #9ca3af;
+}.wx-article .alert-title-remark{
+  color: #c69026;
+}.wx-article .alert-icon-theorem,.wx-article .alert-icon-lemma,.wx-article .alert-icon-corollary,.wx-article .alert-icon-proposition{
+  fill: #986ee2;
+}.wx-article .alert-icon-definition{
+  fill: #57ab5a;
+}.wx-article .alert-icon-axiom,.wx-article .alert-icon-postulate,.wx-article .alert-icon-assumption{
+  fill: #478be6;
+}.wx-article .alert-icon-proof{
+  fill: #9ca3af;
+}.wx-article .alert-icon-remark{
+  fill: #c69026;
+}.wx-article .markdown-alert-theorem,.wx-article .markdown-alert-lemma,.wx-article .markdown-alert-corollary,.wx-article .markdown-alert-proposition{
+  border: 1px solid rgba(152, 110, 226, 0.35);
+  border-left: 4px solid #986ee2;
+}.wx-article .markdown-alert-definition{
+  border: 1px solid rgba(87, 171, 90, 0.35);
+  border-left: 4px solid #57ab5a;
+}.wx-article .markdown-alert-axiom,.wx-article .markdown-alert-postulate,.wx-article .markdown-alert-assumption{
+  border: 1px solid rgba(71, 139, 230, 0.35);
+  border-left: 4px solid #478be6;
+}.wx-article .markdown-alert-proof{
+  border: 1px solid rgba(156, 163, 175, 0.35);
+  border-left: 4px solid #9ca3af;
+}.wx-article .markdown-alert-remark{
+  border: 1px solid rgba(198, 144, 38, 0.35);
+  border-left: 4px solid #c69026;
+}.wx-article .alert-title-custom{
+  color: var(--md-primary-color);
+}.wx-article .markdown-alert-custom{
+  border-left: 4px solid var(--md-primary-color);
+}.wx-article .markdown-alert-theorem > :not(.markdown-alert-title),.wx-article .markdown-alert-lemma > :not(.markdown-alert-title),.wx-article .markdown-alert-corollary > :not(.markdown-alert-title),.wx-article .markdown-alert-proposition > :not(.markdown-alert-title),.wx-article .markdown-alert-definition > :not(.markdown-alert-title),.wx-article .markdown-alert-axiom > :not(.markdown-alert-title),.wx-article .markdown-alert-postulate > :not(.markdown-alert-title),.wx-article .markdown-alert-assumption > :not(.markdown-alert-title){
+  font-style: italic;
+}.wx-article pre.code__pre,.wx-article .hljs.code__pre{
+  font-size: 90%;
+  overflow-x: auto;
+  border-radius: 8px;
+  padding: 0 !important;
+  line-height: 1.5;
+  margin: calc(10px * var(--md-block-spacing)) 8px;
+}.wx-article img{
+  display: block;
+  max-width: 100%;
+  margin: calc(0.1em * var(--md-block-spacing)) auto calc(0.5em * var(--md-block-spacing));
+  border-radius: 4px;
+}.wx-article ol{
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}.wx-article ul{
+  list-style: circle;
+  padding-left: 1em;
+  margin-left: 0;
+  color: hsl(var(--foreground));
+}.wx-article li{
+  display: block;
+  margin: calc(0.2em * var(--md-block-spacing)) 8px;
+  color: hsl(var(--foreground));
+}.wx-article p.footnotes{
+  margin: calc(0.5em * var(--md-block-spacing)) 8px;
+  font-size: 80%;
+  color: hsl(var(--foreground));
+}.wx-article figure{
+  margin: calc(1.5em * var(--md-block-spacing)) 8px;
+  color: hsl(var(--foreground));
+}.wx-article figcaption,.wx-article .md-figcaption{
+  text-align: center;
+  color: color-mix(in srgb, hsl(var(--foreground)) 50%, transparent);
+  font-size: 0.8em;
+}.wx-article hr{
+  border-style: solid;
+  border-width: 2px 0 0;
+  border-color: rgba(0, 0, 0, 0.1);
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(1, 0.5);
+  transform-origin: 0 0;
+  transform: scale(1, 0.5);
+  height: 0.4em;
+  margin: calc(1.5em * var(--md-block-spacing)) 0;
+}.wx-article .codespan{
+  font-size: 90%;
+  color: var(--md-primary-color);
+  background: color-mix(in srgb, var(--md-primary-color) 8%, transparent);
+  padding: 3px 5px;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--md-primary-color) 20%, transparent);
+}.wx-article pre.code__pre > code,.wx-article .hljs.code__pre > code{
+  display: -webkit-box;
+  padding: 0.5em 1em 1em;
+  overflow-x: auto;
+  text-indent: 0;
+  color: inherit;
+  background: none;
+  white-space: nowrap;
+  margin: 0;
+}.wx-article em{
+  font-style: italic;
+  font-size: inherit;
+}.wx-article a{
+  color: var(--md-link-color);
+  text-decoration: none;
+}.wx-article strong{
+  color: var(--md-primary-color);
+  font-weight: bold;
+  font-size: inherit;
+}.wx-article .del{
+  color: color-mix(in srgb, hsl(var(--foreground)) 55%, transparent);
+  text-decoration: line-through;
+}.wx-article table{
+  color: hsl(var(--foreground));
+}.wx-article thead{
+  font-weight: bold;
+  color: hsl(var(--foreground));
+}.wx-article th{
+  border: 1px solid color-mix(in srgb, hsl(var(--foreground)) 15%, transparent);
+  padding: 0.25em 0.5em;
+  color: hsl(var(--foreground));
+  word-break: keep-all;
+  background: color-mix(in srgb, hsl(var(--foreground)) 5%, transparent);
+}.wx-article td{
+  border: 1px solid color-mix(in srgb, hsl(var(--foreground)) 15%, transparent);
+  padding: 0.25em 0.5em;
+  color: hsl(var(--foreground));
+  word-break: keep-all;
+}.wx-article .katex-inline{
+  max-width: 100%;
+  overflow-x: auto;
+  cursor: pointer;
+}.wx-article .katex-block{
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  cursor: pointer;
+  padding: 0.5em 0;
+  text-align: center;
+}.wx-article .katex-pending{
+  color: hsl(var(--muted-foreground, 0 0% 45%));
+  font-size: 0.875em;
+}.wx-article .katex-block.katex-pending{
+  padding: 0.75em 0;
+}.wx-article .katex-inline.katex-pending{
+  opacity: 0.75;
+}.wx-article .markup-highlight{
+  background-color: var(--md-primary-color);
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+}.wx-article .markup-underline{
+  text-decoration: underline;
+  text-decoration-color: var(--md-primary-color);
+}.wx-article .markup-wavyline{
+  text-decoration: underline wavy;
+  text-decoration-color: var(--md-primary-color);
+  text-decoration-thickness: 2px;
+}.wx-article .markup-superscript{
+  font-size: 0.75em;
+  line-height: 0;
+  vertical-align: super;
+}

@@ -1,0 +1,114 @@
+/* 来源: doocs/md (github.com/doocs/md) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+.wx-article{--md-primary-color:#0F4C81;--md-font-family:-apple-system-font,BlinkMacSystemFont,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",Arial,sans-serif;--md-font-size:16px;--md-line-height:1.75;--md-block-spacing:1;--md-link-color:#576b95;--foreground:0 0% 3.9%;--blockquote-background:#f7f7f7;}
+.wx-article,.wx-article .container{
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  text-align: left;
+}.wx-article{
+  font-family: var(--md-font-family);
+  font-size: var(--md-font-size);
+  line-height: var(--md-line-height);
+  text-align: left;
+}.wx-article section > :first-child{
+  margin-top: 0 !important;
+}.wx-article blockquote,.wx-article blockquote{
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}.wx-article table,.wx-article table{
+  border-collapse: collapse;
+  min-width: 100%;
+}.wx-article .mermaid-diagram .nodeLabel p{
+  color: unset !important;
+  letter-spacing: unset !important;
+}.wx-article img.md-emoji,.wx-article img.md-emoji{
+  max-height: 1.4em;
+  width: auto;
+  vertical-align: text-bottom;
+  margin: 0 0.1em;
+  display: inline;
+}.wx-article img.md-asset-img,.wx-article img.md-asset-img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: text-bottom;
+  display: inline;
+}
+
+.wx-article h1{
+  padding: 0.5em 1em;
+  border-bottom: 2px solid var(--md-primary-color);
+  font-size: calc(var(--md-font-size) * 1.4);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}.wx-article h2{
+  padding: 0.3em 1em;
+  border-radius: 8px;
+  font-size: calc(var(--md-font-size) * 1.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}.wx-article h3{
+  padding-left: 12px;
+  font-size: calc(var(--md-font-size) * 1.2);
+  border-left: 4px solid var(--md-primary-color);
+  border-bottom: 1px dashed var(--md-primary-color);
+}.wx-article h4{
+  font-size: calc(var(--md-font-size) * 1.1);
+}.wx-article h5{
+  font-size: var(--md-font-size);
+}.wx-article h6{
+  font-size: var(--md-font-size);
+}.wx-article blockquote{
+  font-style: italic;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid var(--md-primary-color);
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.6);
+  background: var(--md-blockquote-background, transparent);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: calc(1em * var(--md-block-spacing));
+}.wx-article .markdown-alert{
+  font-style: italic;
+}.wx-article .codespan{
+  font-family: 'Fira Code', Menlo, Operator Mono, Consolas, Monaco, monospace;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}.wx-article pre.code__pre,.wx-article .hljs.code__pre{
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}.wx-article pre.code__pre > code,.wx-article .hljs.code__pre > code{
+  font-family: 'Fira Code', Menlo, Operator Mono, Consolas, Monaco, monospace;
+}.wx-article img{
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}.wx-article figcaption,.wx-article .md-figcaption{
+  text-align: center;
+  color: #888;
+  font-size: 0.8em;
+}.wx-article ol{
+  padding-left: 1.5em;
+}.wx-article ul{
+  list-style: none;
+  padding-left: 1.5em;
+}.wx-article li{
+  margin: calc(0.5em * var(--md-block-spacing)) 8px;
+}.wx-article hr{
+  height: 1px;
+  border: none;
+  margin: calc(2em * var(--md-block-spacing)) 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}.wx-article table{
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  margin: calc(1em * var(--md-block-spacing)) 8px;
+  color: hsl(var(--foreground));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}.wx-article thead{
+  color: #fff;
+}.wx-article td{
+  padding: 0.5em 1em;
+}.wx-article em{
+  font-style: italic;
+  font-size: inherit;
+}.wx-article a{
+  color: var(--md-link-color);
+  text-decoration: none;
+}

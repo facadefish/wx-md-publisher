@@ -1,0 +1,1015 @@
+/* 来源: WeMD (github.com/tenngoxars/WeMD) · MIT License · 由 scripts/build-themes.mjs 自动生成, 请勿手改 */
+/* 默认样式，最佳实践 */
+
+/* 全局属性 */
+.wx-article {
+  font-size: 16px;
+  color: #000000;
+  padding: 0 8px;
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', 'Microsoft YaHei', '微软雅黑', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 段落 */
+.wx-article p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+}
+
+/* 标题 */
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  color: #000000;
+}
+.wx-article h1 {
+  font-size: 24px;
+}
+.wx-article h2 {
+  font-size: 22px;
+}
+.wx-article h3 {
+  font-size: 20px;
+}
+.wx-article h4 {
+  font-size: 18px;
+}
+.wx-article h5 {
+  font-size: 16px;
+}
+.wx-article h6 {
+  font-size: 16px;
+}
+
+.wx-article h1 .prefix,
+.wx-article h2 .prefix,
+.wx-article h3 .prefix,
+.wx-article h4 .prefix,
+.wx-article h5 .prefix,
+.wx-article h6 .prefix {
+  display: none;
+}
+
+.wx-article h1 .suffix,
+.wx-article h2 .suffix,
+.wx-article h3 .suffix,
+.wx-article h4 .suffix,
+.wx-article h5 .suffix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+/* 列表 */
+.wx-article ul,
+.wx-article ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  color: #000000;
+}
+.wx-article ul {
+  list-style-type: disc;
+}
+.wx-article ul ul {
+  list-style-type: square;
+}
+
+.wx-article ol {
+  list-style-type: decimal;
+}
+
+.wx-article li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 26px;
+  text-align: left;
+  color: #010101; /* 使用接近黑色的 HEX，避免微信吞掉纯黑色 */
+  font-weight: 500;
+}
+
+/* 引用 */
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1 {
+  display: block;
+  font-size: 0.9em;
+  overflow: auto;
+  overflow-scrolling: touch;
+  border-left: 3px solid rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.05);
+  color: #6a737d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-1 p {
+  margin: 0px;
+  color: #000000;
+  line-height: 26px;
+}
+
+.wx-article .multiquote-2 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 {
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.wx-article .multiquote-3 p {
+  text-align: center;
+}
+
+.wx-article .multiquote-3 h3 {
+  text-align: center;
+}
+
+.wx-article .table-of-contents a {
+  border: none;
+  color: #000000;
+  font-weight: normal;
+}
+
+/* 链接 */
+.wx-article a {
+  text-decoration: none;
+  color: #1e6bb8;
+  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 1px solid #1e6bb8;
+}
+
+/* 加粗 */
+.wx-article strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 斜体 */
+.wx-article em {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 加粗斜体 */
+.wx-article em strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+/* 删除线 */
+.wx-article del {
+  font-style: italic;
+  color: #000000;
+}
+
+/* 下划线 */
+.wx-article u {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+
+/* 分隔线 */
+.wx-article hr {
+  height: 1px;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+/* 代码块容器 */
+.wx-article pre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre.custom {
+  padding: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.wx-article pre code {
+  display: block;
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  border-radius: 0px;
+  font-size: 12px;
+  white-space: pre;
+  min-width: max-content;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article pre code span {
+  line-height: 26px;
+}
+
+/* 行内代码 */
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  font-size: 14px;
+  word-wrap: break-word;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+  color: #1e6bb8;
+  background-color: rgba(27,31,35,.05);
+  font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+  word-break: break-all;
+}
+
+/* 图片 */
+.wx-article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* 图片 */
+.wx-article figure {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* 图片描述文字 */
+.wx-article figcaption {
+  margin-top: 5px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* 表格容器 */
+.wx-article .table-container{
+  overflow-x: auto;
+}
+
+/* 表格 */
+.wx-article table {
+  display: table;
+  text-align: left;
+}
+.wx-article tbody {
+  border: 0;
+}
+
+.wx-article table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  background-color: #ffffff;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background-color: #F8F8F8;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: left;
+}
+
+.wx-article table tr th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+/* 表格最小列宽4个汉字 */
+.wx-article table tr th:nth-of-type(n),
+.wx-article table tr td:nth-of-type(n){
+  min-width:85px;
+}
+
+.wx-article .footnote-word {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-ref {
+  color: #1e6bb8;
+  font-weight: bold;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+}
+
+.wx-article .footnote-num {
+  display: inline;
+  width: 10%; /*神奇，50px就不可以*/
+  background: none;
+  font-size: 80%;
+  opacity: 0.6;
+  line-height: 26px;
+  font-family: ptima-Regular, Optima, PingFangSC-light, PingFangTC-light, 'PingFang SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wx-article .footnote-item p {
+  display: inline;
+  font-size: 14px;
+  width: 90%;
+  padding: 0px;
+  margin: 0;
+  line-height: 26px;
+  color: #000000;
+  word-break:break-all;
+  width: calc(100%-50)
+}
+
+.wx-article sub, sup {
+  line-height: 0;
+}
+
+.wx-article .footnotes-sep:before {
+  content: "参考资料";
+  display: block;
+}
+
+/* 解决公式问题 */
+.wx-article .block-equation {
+  display:block;
+  text-align: center;
+  overflow: auto;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wx-article .inline-equation {
+}
+
+.wx-article .inline-equation > svg {
+}
+
+.wx-article .imageflow-layer1 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  white-space: normal;
+  border: 0px none;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.wx-article .imageflow-layer2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.wx-article .imageflow-layer3 {
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  vertical-align: top;
+  width: 80%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.wx-article .imageflow-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.wx-article .imageflow-caption {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: #888;
+}
+
+.wx-article .nice-suffix-juejin-container {
+  margin-top: 20px !important;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article figure a img {
+  margin: 0px;
+}
+
+.wx-article figure {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套 */
+.wx-article figure a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 图片链接嵌套，图片解释 */
+.wx-article figure a + figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -35px;
+  background: rgba(0,0,0,0.7);
+  color: #ffffff;
+  line-height: 35px;
+  z-index: 20;
+}
+
+.wx-article .callout {
+  margin: 24px 0;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.08);
+}
+
+.wx-article .callout-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0;
+  letter-spacing: 0.05em;
+}
+
+.wx-article .callout-icon { margin-right: 8px;
+  font-size: 18px;
+}
+
+.wx-article .callout-note { border-left: 4px solid #6366f1; background: #f5f5ff; }
+.wx-article .callout-tip { border-left: 4px solid #10b981; background: #ecfdf5; }
+.wx-article .callout-important { border-left: 4px solid #8b5cf6; background: #f5f3ff; }
+.wx-article .callout-warning { border-left: 4px solid #f59e0b; background: #fffbeb; }
+.wx-article .callout-caution { border-left: 4px solid #ef4444; background: #fff5f5; }
+
+
+.wx-article .task-list-item {
+  list-style: none;
+  margin-left: -1.2em;
+  margin-bottom: 6px;
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 4px;
+  pointer-events: none;
+}
+
+/* 清晰指南：教程与操作手册 */
+.wx-article {
+  max-width: 677px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  color: #263b3a;
+  background-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.82;
+  letter-spacing: 0.012em;
+  word-break: break-word;
+}
+
+.wx-article p {
+  margin: 0 0 21px;
+  color: #263b3a;
+  font-size: 16px;
+  line-height: 1.82;
+  text-align: left;
+  text-wrap: pretty;
+}
+
+.wx-article h1,
+.wx-article h2,
+.wx-article h3,
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  padding: 0;
+  text-align: left;
+}
+
+.wx-article h1 {
+  margin: 24px 0 44px;
+  padding: 0 0 18px;
+  border: none;
+  border-bottom: 8px solid #f0c94d;
+  background: transparent;
+}
+
+.wx-article h1 .content {
+  color: #172b29;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.wx-article h2 {
+  margin: 45px 0 23px;
+  padding: 0 0 9px;
+  border: none;
+  border-bottom: 4px solid #172b29;
+  background: transparent;
+}
+
+.wx-article h2 .content {
+  color: #172b29;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 19px;
+  font-weight: 750;
+  text-wrap: balance;
+}
+
+.wx-article h3 {
+  margin: 32px 0 16px;
+  padding: 0;
+  border-bottom: 1px dashed #8eb1ad;
+}
+
+.wx-article h3 .content {
+  display: inline-block;
+  padding: 0 0 6px;
+  color: #075f58;
+  background: transparent;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 17px;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+.wx-article h4,
+.wx-article h5,
+.wx-article h6 {
+  margin: 27px 0 13px;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #8eb1ad;
+}
+
+.wx-article h4 .content,
+.wx-article h5 .content,
+.wx-article h6 .content {
+  color: #176c65;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.wx-article h1 .prefix,
+.wx-article h1 .suffix,
+.wx-article h2 .prefix,
+.wx-article h2 .suffix,
+.wx-article h3 .prefix,
+.wx-article h3 .suffix,
+.wx-article h4 .prefix,
+.wx-article h4 .suffix,
+.wx-article h5 .prefix,
+.wx-article h5 .suffix,
+.wx-article h6 .prefix,
+.wx-article h6 .suffix {
+  display: none;
+}
+
+.wx-article blockquote {
+  border: none;
+}
+
+.wx-article .multiquote-1,
+.wx-article .multiquote-2,
+.wx-article .multiquote-3 {
+  margin: 28px 0;
+  padding: 18px 20px;
+  border: 2px dashed #172b29;
+  background: #fff7cf;
+}
+
+.wx-article .multiquote-1 p,
+.wx-article .multiquote-2 p,
+.wx-article .multiquote-3 p {
+  margin: 0;
+  color: #31514f;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.wx-article .multiquote-2,
+.wx-article .multiquote-3,
+.wx-article .multiquote-1 .multiquote-1 {
+  margin: 12px 0 0;
+  padding: 10px 0 0;
+  border: none;
+  border-top: 1px dashed #8eb1ad;
+  background: transparent;
+}
+
+.wx-article ul,
+.wx-article ol {
+  margin: 20px 0 27px;
+  padding-left: 25px;
+  color: #087f75;
+}
+
+.wx-article li section {
+  margin: 6px 0;
+  color: #263b3a;
+  line-height: 1.76;
+}
+
+.wx-article ol > li {
+  margin: 14px 0;
+  color: #087f75;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.wx-article ol > li > section {
+  padding: 2px 0 12px;
+  border: none;
+  border-bottom: 1px solid #b9d0cd;
+  color: #263b3a;
+  background: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.wx-article a {
+  color: #06736a;
+  font-weight: 650;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.wx-article strong {
+  color: #064c47;
+  font-weight: 750;
+}
+
+.wx-article mark {
+  padding: 1px 4px;
+  color: #4f3a11;
+  background: #f5dda1;
+}
+
+.wx-article hr {
+  height: 1px;
+  margin: 44px 0;
+  border: none;
+  background: #9bbdb9;
+}
+
+.wx-article figure {
+  margin: 34px 0 39px;
+  padding: 0;
+  border: 2px solid #172b29;
+  border-radius: 0;
+  background: transparent;
+  break-inside: avoid;
+}
+
+.wx-article figure a {
+  border: none;
+}
+
+.wx-article img,
+.wx-article figure a img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.wx-article figcaption {
+  margin-top: 0;
+  padding: 9px 12px;
+  color: #ffffff;
+  background: #172b29;
+  font-size: 12px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+.wx-article p code,
+.wx-article li code,
+.wx-article td code,
+.wx-article th code {
+  padding: 2px 6px;
+  border: 1px solid #b9d0cd;
+  color: #075f58;
+  background: #eaf3f2;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 13px;
+}
+
+.wx-article pre {
+  margin: 29px 0;
+  border: 1px solid #183f3c;
+  border-top: 6px solid #23a79b;
+  background: #173330;
+  overflow-x: auto;
+}
+
+.wx-article pre code,
+.wx-article pre code.hljs {
+  display: block;
+  min-width: max-content;
+  padding: 19px 20px;
+  color: #e8f4f2;
+  background: #173330;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  white-space: pre;
+}
+
+.wx-article pre.custom > .mac-sign {
+  display: block;
+  border-bottom: 1px solid #365c58;
+  background: #173330;
+}
+
+.wx-article .table-container {
+  margin: 31px 0;
+  overflow-x: auto;
+}
+
+.wx-article table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #172b29;
+  color: #263b3a;
+  background: #ffffff;
+  text-align: left;
+}
+
+.wx-article table tr th,
+.wx-article table tr td {
+  min-width: 88px;
+  padding: 10px;
+  border: 1px solid #b9d0cd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.wx-article table tr th {
+  color: #172b29;
+  background: #f0c94d;
+  font-weight: 700;
+}
+
+.wx-article table tr:nth-child(2n) {
+  background: #eef6f5;
+}
+
+.wx-article .callout {
+  margin: 29px 0;
+  padding: 17px 18px;
+  border: 2px solid #172b29;
+  border-radius: 0;
+  color: #263b3a;
+  background: #ffffff;
+  break-inside: avoid;
+}
+
+.wx-article .callout-warning {
+  border-color: #8c6500;
+  background: #fff6df;
+}
+
+.wx-article .callout-caution {
+  border-color: #a43c31;
+  background: #fff0ed;
+}
+
+.wx-article .callout-title {
+  display: inline-block;
+  margin-bottom: 9px;
+  padding: 2px 7px;
+  color: #ffffff;
+  background: #172b29;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.wx-article .callout p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.wx-article .footnote-word,
+.wx-article .footnote-ref {
+  color: #087f75;
+  font-weight: 700;
+}
+
+.wx-article .footnotes-sep {
+  margin-top: 47px;
+  padding-top: 16px;
+  border-top: 5px solid #087f75;
+}
+
+.wx-article .footnote-item {
+  display: flex;
+  margin-top: 9px;
+}
+
+.wx-article .footnote-num {
+  width: 30px;
+  flex-shrink: 0;
+  color: #087f75;
+  font-weight: 700;
+}
+
+.wx-article .footnote-item p {
+  margin: 0;
+  color: #58716f;
+  font-size: 13px;
+}
+
+.wx-article .block-equation {
+  display: block;
+  margin: 30px 0;
+  padding: 18px 10px;
+  border: 1px solid #b9d0cd;
+  background: #f7faf9;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.wx-article .block-equation > svg {
+  max-width: 300% !important;
+}
+
+.wx-article .inline-equation > svg {
+  vertical-align: middle;
+}
+
+.wx-article pre.mermaid {
+  padding: 20px 10px;
+  border: 1px solid #93b8b4;
+  border-top: 5px solid #087f75;
+  background: #ffffff;
+}
+
+.wx-article .task-list-item {
+  display: flex;
+  align-items: flex-start;
+  margin: 9px 0 9px -1.2em;
+  padding: 9px 10px;
+  border: 1px solid #c5d8d6;
+  background: #f7faf9;
+  list-style: none;
+}
+
+.wx-article .task-list-item input[type='checkbox'] {
+  margin-top: 7px;
+  margin-right: 8px;
+  accent-color: #087f75;
+  pointer-events: none;
+}
+
+/* GitHub Dark 代码高亮 */
+.wx-article .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 16px;
+  color: #c9d1d9;
+  background: #0d1117;
+}
+
+.wx-article .hljs-doctag,
+.wx-article .hljs-keyword,
+.wx-article .hljs-meta .hljs-keyword,
+.wx-article .hljs-template-tag,
+.wx-article .hljs-template-variable,
+.wx-article .hljs-type,
+.wx-article .hljs-variable.language_ {
+  color: #ff7b72;
+}
+
+.wx-article .hljs-title,
+.wx-article .hljs-title.class_,
+.wx-article .hljs-title.class_.inherited__,
+.wx-article .hljs-title.function_ {
+  color: #d2a8ff;
+}
+
+.wx-article .hljs-attr,
+.wx-article .hljs-attribute,
+.wx-article .hljs-literal,
+.wx-article .hljs-meta,
+.wx-article .hljs-number,
+.wx-article .hljs-operator,
+.wx-article .hljs-variable,
+.wx-article .hljs-selector-attr,
+.wx-article .hljs-selector-class,
+.wx-article .hljs-selector-id {
+  color: #79c0ff;
+}
+
+.wx-article .hljs-regexp,
+.wx-article .hljs-string,
+.wx-article .hljs-meta .hljs-string {
+  color: #a5d6ff;
+}
+
+.wx-article .hljs-built_in,
+.wx-article .hljs-symbol {
+  color: #ffa657;
+}
+
+.wx-article .hljs-comment,
+.wx-article .hljs-code,
+.wx-article .hljs-formula {
+  color: #9198a1;
+}
+
+.wx-article .hljs-name,
+.wx-article .hljs-quote,
+.wx-article .hljs-selector-tag,
+.wx-article .hljs-selector-pseudo {
+  color: #7ee787;
+}
+
+.wx-article .hljs-subst,
+.wx-article .hljs-emphasis,
+.wx-article .hljs-strong {
+  color: #c9d1d9;
+}
+
+.wx-article .hljs-section {
+  color: #58a6ff;
+  font-weight: bold;
+}
+
+.wx-article .hljs-bullet {
+  color: #f2cc60;
+}
+
+.wx-article .hljs-emphasis {
+  font-style: italic;
+}
+
+.wx-article .hljs-strong {
+  font-weight: bold;
+}
+
+.wx-article .hljs-addition {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+
+.wx-article .hljs-deletion {
+  color: #ffdcd7;
+  background-color: #67060c;
+}
