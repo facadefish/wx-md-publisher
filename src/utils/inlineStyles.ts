@@ -28,6 +28,11 @@ const VAR_REF_RE = /var\(\s*(--[\w-]+)\s*(?:,([^()]*(?:\([^()]*\)[^()]*)*))?\)/g
 export function wechatifyArticle(html: string): string {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('aria-hidden', 'true');
+  // 只授予同源（供 contentDocument 读取 CSSOM），不授予 allow-scripts：
+  // 这份 html 来自用户 Markdown 与主题 CSS，其中若含脚本不应在导出流程中执行。
+  // 注意必须用 allow-same-origin 而非空 sandbox——后者会让 contentDocument
+  // 变成 null，直接破坏下面的 CSSOM 内联。
+  iframe.setAttribute('sandbox', 'allow-same-origin');
   iframe.style.cssText = 'position:fixed;width:0;height:0;border:0;visibility:hidden;';
   document.body.appendChild(iframe);
   try {
