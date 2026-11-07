@@ -12,6 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import { fileURLToPath } from 'node:url';
+import { resolveViteBin } from './vite-bin.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const RELEASE = path.join(ROOT, 'release');
@@ -162,7 +163,9 @@ function listZipEntries(buf) {
 // ── 0. 确保构建产物存在 ───────────────────────────────────
 if (!fs.existsSync(path.join(ROOT, 'public', 'index.html'))) {
   console.log('构建产物缺失，先执行构建...');
-  run(process.execPath, [require.resolve('vite/bin/vite.js'), 'build']);
+  const { binPath, error } = resolveViteBin(ROOT);
+  if (!binPath) throw new Error(`无法解析 vite 入口：${error?.message ?? '未知错误'}`);
+  run(process.execPath, [binPath, 'build']);
 }
 
 // ── 1. 下载运行时（带缓存）────────────────────────────────

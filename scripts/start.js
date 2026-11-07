@@ -5,10 +5,10 @@
  * - 缺失且无依赖 → 给出清晰指引
  */
 import { existsSync } from 'node:fs';
-import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { spawn } from 'node:child_process';
+import { resolveViteBin } from './vite-bin.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -29,15 +29,21 @@ function buildThenStart() {
   console.log('');
   console.log('首次运行，正在构建前端页面...');
   console.log('');
-  let viteBin;
-  try {
-    viteBin = createRequire(path.join(ROOT, 'package.json')).resolve('vite/bin/vite.js');
-  } catch {
-    console.error('未找到 vite。源码运行请先执行 npm install；');
-    console.error('或下载 Release 中的便携包（已包含构建产物，无需安装）。');
+  const { binPath, error } = resolveViteBin(ROOT);
+  if (!binPath) {
+    // 区分「依赖未安装」与「装了但入口解析失败」，避免把用户引向错误的排查方向
+    const notInstalled = error && (error.code === 'MODULE_NOT_FOUND' || error.code === 'ERR_MODULE_NOT_FOUND');
+    if (notInstalled) {
+      console.error('未找到 vite。源码运行请先执行 npm install；');
+      console.error('或下载 Release 中的便携包（已包含构建产物，无需安装）。');
+    } else {
+      console.error('已安装 vite，但无法解析其可执行入口：');
+      console.error(`  ${error?.message ?? '未知错误'}`);
+      console.error('请检查 vite 版本，或改用便携包（已包含构建产物，无需安装）。');
+    }
     process.exit(1);
   }
-  const build = spawn(process.execPath, [viteBin, 'build'], {
+  const build = spawn(process.execPath, [binPath, 'build'], {
     cwd: ROOT,
     stdio: 'inherit',
   });
