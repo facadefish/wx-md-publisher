@@ -60,6 +60,8 @@ function inlineMarkdown(text: string): string {
   return text
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    // GFM 删除线：主题已内置 .wx-article del 样式（line-through），无需额外 CSS
+    .replace(/~~([^~]+)~~/g, '<del>$1</del>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_all, label: string, url: string) => `<a href="${safeHref(url)}">${label}</a>`);
 }
