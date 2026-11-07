@@ -63,6 +63,17 @@ function inlineMarkdown(text: string): string {
     // GFM 删除线：主题已内置 .wx-article del 样式（line-through），无需额外 CSS
     .replace(/~~([^~]+)~~/g, '<del>$1</del>')
     .replace(/`([^`]+)`/g, '<code>$1</code>')
+    // 图片必须排在链接规则之前：![alt](url) 本身包含 [alt](url)，
+    // 否则会被链接规则抢先匹配成「感叹号 + 链接」，导致图片丢失
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_all, alt: string, raw: string) => {
+      // 文本进入本函数前已被 escapeHtml，因此 title 在原文里表现为 &quot;title&quot;
+      const parts = raw.match(/^(\S+)(?:\s+&quot;([\s\S]*?)&quot;)?$/);
+      const url = parts ? parts[1] : raw.trim();
+      const parsed = safeImgSrc(url);
+      if (!parsed) return _all;
+      const title = parts?.[2] ? ` title="${parts[2]}"` : '';
+      return `<img class="wx-image" src="${parsed}" alt="${alt}"${title} />`;
+    })
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_all, label: string, url: string) => `<a href="${safeHref(url)}">${label}</a>`);
 }
 
@@ -70,6 +81,20 @@ function inlineMarkdown(text: string): string {
 function safeHref(url: string): string {
   const compact = url.trim().toLowerCase().replace(/[\s-]+/g, '');
   if (/^(javascript|vbscript|data):/.test(compact)) return '#';
+  return url;
+}
+
+/**
+ * 图片专用协议校验：允许 http/https 与 data:image/*（粘贴图片走 base64 dataURL），
+ * 拦截 javascript: / vbscript: / file: 以及 data:text/html 等非图片 data URL。
+ * 不能复用 safeHref——它会一并拦掉 data:，导致粘贴的图片全部失效。
+ */
+function safeImgSrc(url: string): string | null {
+  const compact = url.trim().toLowerCase().replace(/[\s-\u001f]+/g, '');
+  if (compact.startsWith('data:')) {
+    return /^data:image\/[a-z0-9.+-]+;base64,/.test(compact) ? url : null;
+  }
+  if (/^(javascript|vbscript|file):/.test(compact)) return null;
   return url;
 }
 
