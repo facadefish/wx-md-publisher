@@ -4,6 +4,12 @@ A local-first Markdown → WeChat Official Account typesetting and publishing to
 
 [中文 README](README.md)
 
+[![Product film](docs/assets/cover.png)](docs/assets/demo.mp4)
+
+> Click the cover for the 47-second product demo ([demo.mp4](docs/assets/demo.mp4))
+
+![Workspace](docs/assets/demo.gif)
+
 ## Why this tool
 
 - **WYSIWYG paste**: copied content goes through a WeChat adaptation pipeline (CSS inlining + pseudo-element materialization + WeChat-specific fixes) — what you paste into the mp editor matches the preview **pixel for pixel**
